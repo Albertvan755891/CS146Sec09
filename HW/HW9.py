@@ -5,7 +5,7 @@ class TreeNode(object):
          self.left = left
          self.right = right
          
-    def create_tree():
+    def create_tree(self):
         root = TreeNode(4)
         root.left = TreeNode(3)
         root.right = TreeNode(8)
@@ -14,7 +14,8 @@ class TreeNode(object):
         root.right.right = TreeNode(9)
         return root
 
-    def lowest_common_ancestor(root, p, q):
+    def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
+
         if root is None:
             return None
         
@@ -29,19 +30,20 @@ class TreeNode(object):
                 current = current.right
             else: 
                 return current
-        return None
-    
-def main():
-    root = TreeNode.create_tree()
-    
-    p_value = int(input("Enter the value of p: "))
-    p = TreeNode(p_value)
-    
-    q_value = int(input("Enter the value of q: "))
-    q = TreeNode(q_value)
-    
-    lca = TreeNode.lowest_common_ancestor(root, p, q)
-    print("Lowest Common Ancestor:", lca.val if lca else "null")
-    
+        return None 
+
 if __name__ == "__main__":
-    main()   
+    def main():
+        tree_node = TreeNode()
+        root = tree_node.create_tree()
+    
+        p_value = int(input("Enter the value of p: "))
+        p = TreeNode(p_value)
+    
+        q_value = int(input("Enter the value of q: "))
+        q = TreeNode(q_value)
+    
+        lca = tree_node.lowestCommonAncestor(root, p, q)
+        print("Lowest Common Ancestor:", lca.val if lca else "null")
+     
+    main()
