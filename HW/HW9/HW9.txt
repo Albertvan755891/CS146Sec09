@@ -1,0 +1,5 @@
+My approach to this assigment involving creating a tree and finds the lowest common ancestor between p and q by using recursion. 
+The lowestCommonAncestor method checks the root too see if it is null and then loops to see if p and q are less than or greater
+than the current node. If the current is greater, then both nodes are on the right side of the tree and moves the current to its right child. 
+If it is less than, then both nodes are on the left side of the tree and moves the current to its left child. It loops until the current 
+becomes none. 
