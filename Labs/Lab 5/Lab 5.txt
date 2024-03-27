@@ -1,0 +1,7 @@
+I approached this lab using recursion. The isValid method validates
+the subtree by taking the minimum value, maximum val and the node. 
+If the value of node is in range, then the function will call itself
+recursively for the left/right subtrees. The max value of the left
+subtree will be updated to node.val and the nodes in this subtree must 
+have values less than node.val. The min value of teh right subtree will be updated
+and the values must be greater than node.val. 
