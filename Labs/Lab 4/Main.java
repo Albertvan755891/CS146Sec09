@@ -25,17 +25,17 @@ public class Main{
         root.right.right = new TreeNode(6);
         return root;
     }
-    public static TreeNode invertTree(TreeNode treeNode){
-        if(treeNode == null){
+    public static TreeNode invertTree(TreeNode root){
+        if(root == null){
             return null;
         }
-        TreeNode left = invertTree(treeNode.left);
-        TreeNode right = invertTree(treeNode.right);
+        TreeNode left = invertTree(root.left);
+        TreeNode right = invertTree(root.right);
 
-        treeNode.left = right;
-        treeNode.right = left;
+        root.left = right;
+        root.right = left;
 
-        return treeNode;
+        return root;
     }
 
     public static void printTree(TreeNode root){
