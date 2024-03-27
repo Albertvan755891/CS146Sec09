@@ -19,15 +19,15 @@ class TreeNode {
     
         public boolean isValidBST(TreeNode root) {
             previous = null; // Initialize previous here
-            return isValidBSTHelper(root);
+            return isValid(root);
         }
     
-public boolean isValidBSTHelper(TreeNode node) {
+public boolean isValid(TreeNode node) {
     if (node == null)
         return true;
 
     // Check left subtree
-    if (!isValidBSTHelper(node.left))
+    if (!isValid(node.left))
         return false;
 
     // Check current node
@@ -36,7 +36,7 @@ public boolean isValidBSTHelper(TreeNode node) {
     previous = node;
 
     // Check right subtree
-    return isValidBSTHelper(node.right);
+    return isValid(node.right);
 }
 
 public static void main(String[] args){
