@@ -7,15 +7,15 @@ class TreeNode(object):
          self.right = right
          
      def isValidBST(self, root):
-         def isValid(node, min_val, max_val):
+         def isValid(node, min_value, max_value):
              if not node:
                  return True
              
-             if not(min_val < node.val < max_val):
+             if not(min_value < node.val < max_value):
                  return False
              
-             return isValid(node.left, min_val, node.val) and \
-               isValid(node.right, node.val, max_val)
+             return isValid(node.left, min_value, node.val) and \
+               isValid(node.right, node.val, max_value)
                     
          return isValid(root, float("-inf"), float("inf"))
      
