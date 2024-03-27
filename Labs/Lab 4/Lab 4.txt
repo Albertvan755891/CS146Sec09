@@ -1,0 +1,5 @@
+My approach to this assignment was to use recursion to invert the tree. 
+I created a tree and for my invertTree method, it checks if the root is empty. 
+Then it moves down the tree, swapping the left and right children of the current 
+root node. The invertTree method is recursively called on the left and right subtrees. 
+This continues until it goes through the whole tree. Then returns the root. 
