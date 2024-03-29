@@ -4,7 +4,8 @@ store the nodes to be processed. It will put the root node into the queue
 then itereate through processing the nodes one level at a time. 
 Every time a node is processed, it appends the value to the current 
 level list and adds the children to the queue. It appends the current level to the 
-results list and will repeat until the queue is empty.
+results list and will repeat until the queue is empty. By doing this nodes at each 
+level are processed before moving to the next level which constitutes as BFS. 
 
 For the test cases, they it will take the result and if it is null then it 
 will output None and if the result is not empty then it will print the a list of 
