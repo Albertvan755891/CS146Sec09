@@ -1,0 +1,11 @@
+My approach for this hw uses BFS in order to implement the levelOrder method.
+The levelOrder method will initlize an empty result list and dequeue to
+store the nodes to be processed. It will put the root node into the queue
+then itereate through processing the nodes one level at a time. 
+Every time a node is processed, it appends the value to the current 
+level list and adds the children to the queue. It appends the current level to the 
+results list and will repeat until the queue is empty.
+
+For the test cases, they it will take the result and if it is null then it 
+will output None and if the result is not empty then it will print the a list of 
+lists containing the node values at each level. 
