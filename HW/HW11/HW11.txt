@@ -1,0 +1,16 @@
+For the Java version of this assignment I decided to use a BFS approach.
+I defined a queue to store the coordinates, set the starting pixel's color as the target
+and added the starting pixel's coordinates to the queue. Then I used a loop to dequeue a pixel, 
+mark the pixel as visited, and check adjacent pixels to see 2 things: the bounds and color. 
+If it is within bounds then change the color to the target color and add the coordinates to the queue. 
+After the traversal, the modified image is returned. 
+
+For the python version of this assignment I used a DFS approach. 
+This version uses a recursive DFS function to take the image, starting coordinates, and target color.
+If the current pixel is out of bounds or does not have the same color, then nothing is returned (Base Case).
+For the recursive case: color of current pixel is changed to the color of target color. DFS is then recursively called
+for each adjacent pixel. 
+
+Sample Test cases are for both versions are in the main function. 
+
+
