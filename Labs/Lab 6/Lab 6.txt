@@ -1,0 +1,8 @@
+For this assignment I used a graph and used a DFS algorithm to traverse the graph. 
+The canFinish method checks if it is possible to finish all courses based on the number
+of courses and their prereqs. An outer list storing a course and an inner list storing the prerequisites for 
+each course is created. We iterate over the prerequisite array and add each prerequisite to its 
+corresponding course to populate the grpah. We then use a DFS algorithm to iterate through each course and 
+have the hasCycle method check whether or not there is a cycle. If it detects a cycle the method will return false as 
+it is not possible to finish all the courses. IF there is no cycle then the method will return True meaning that it is possible to finish
+all the courses. The test cases are included in the main method below. 
