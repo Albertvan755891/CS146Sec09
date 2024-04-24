@@ -1,0 +1,5 @@
+For this assignment, I implemented Kruskal's algorithm to find the MST 
+of the graph formed by houses and pipes. The cost of building wells and laying pipes 
+are added into the AllEdges list. Kruskal's algo will iterate through the sorted edges and 
+check if they form a cycle. If they do not form a cycle then they will be added to the MST
+The find method will find the root of a set. The given test case is tested in the main method. 
