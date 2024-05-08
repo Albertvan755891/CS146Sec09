@@ -1,0 +1,6 @@
+For this lab I used a BFS approach to go through all the combinations of coins. 
+It uses a queue to store what needs to be processed and a set to keep track of the
+visited amounts. The outer loop iterates until there are no more amounts that need to 
+be processed. The inner loop goes through the current level of the BFS tree. It will subtract the 
+coin value from it to generate the possible next amounts for each amount. It adds the next valid amounts 
+to the queue and marks it as visited. The test cases are given in the main functions of the code. 
