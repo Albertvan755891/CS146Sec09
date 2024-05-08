@@ -39,21 +39,18 @@ public class CoinChange{
 public static void main(String[] args) {
 
     CoinChange coinChange = new CoinChange();
-    // Test Case 1
     int[] coins1 = {1, 2, 5};
     int amount1 = 11;
     System.out.println("Test Case 1:");
     System.out.println("Input: coins = [1,2,5], amount = 11");
     System.out.println("Output: " + coinChange.coinChange(coins1, amount1)); 
 
-    // Test Case 2
     int[] coins2 = {2};
     int amount2 = 3;
     System.out.println("\nTest Case 2:");
     System.out.println("Input: coins = [2], amount = 3");
     System.out.println("Output: " + coinChange.coinChange(coins2, amount2)); 
 
-    // Test Case 3
     int[] coins3 = {1};
     int amount3 = 0;
     System.out.println("\nTest Case 3:");
