@@ -1,0 +1,8 @@
+Python ver explanation: This code uses sorted function to sort the characters in both strings and compare
+the sorted lists. If the lists are equal the method returns true, if not return false. 
+
+Java Explanation: In this lab, I used an if statement to check if the length of s and t are the same
+If they are not the method will return false because they are different lengths. Then strings
+s and t are converted into arrays. Then the arrays are compared, if the arrays are identical then 
+the method returns true as they are anagrams otherwise it returns false. Some test cases are put 
+into the main method to check. 
